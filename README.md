@@ -10,13 +10,11 @@ To get the prime factors of `n` your old method probably checks all the integers
 
 The Sieve of Eratosthenes works by iterating through the range of integers you care about and simultaneously ruling out large parts of that range. An image:
 
-<p style="text-align:center">
-<img src="http://upload.wikimedia.org/wikipedia/commons/b/b9/Sieve_of_Eratosthenes_animation.gif">
-</p>
+![Sieve of Eratosthenes](http://upload.wikimedia.org/wikipedia/commons/b/b9/Sieve_of_Eratosthenes_animation.gif)
 
 ## Learning Goals
 
-This is a relatively advanced challenge and is the most sophisticated algorithm you've implemented yet, most likely. Focus on understanding the algorithm &mdash; Eratosthenes certainly did it on paper, and so should you!
+This is a relatively advanced challenge and is the most sophisticated algorithm you've implemented yet, most likely. Focus on understanding the algorithm–Eratosthenes certainly did it on paper, and so should you!
 
 ## Objectives
 
