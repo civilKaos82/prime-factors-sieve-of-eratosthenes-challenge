@@ -2,6 +2,9 @@
 
 ##Learning Competencies
 
+* Use Pseudocode
+* Implement algorithms
+
 ##Summary
 
 In this challenge, we'll be implementing a much more sophisticated version of our previous `prime_factors` function using one of the oldest algorithms know, the [Sieve of Eratosthenes](http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes).
@@ -12,23 +15,20 @@ The Sieve of Eratosthenes works by iterating through the range of integers you c
 
 ![Sieve of Eratosthenes](http://upload.wikimedia.org/wikipedia/commons/b/b9/Sieve_of_Eratosthenes_animation.gif)
 
-## Learning Goals
-
 This is a relatively advanced challenge and is the most sophisticated algorithm you've implemented yet, most likely. Focus on understanding the algorithm–Eratosthenes certainly did it on paper, and so should you!
 
-## Objectives
+##Releases
 
-### Implement the Sieve of Eratosthenes
+###Release 0 : Implement the Sieve of Eratosthenes
 
 Write a method `erastothenes_sieve` which takes as its input an integer `n` and returns all prime numbers `p` such that `1 < p <= n`.
 
-### Refactor `prime_factors`
+###Release 1 : Refactor `prime_factors`
 
 Refactor your `prime_factors` implementation to take advantage of the Sieve of Eratosthenes.
 
-##Releases
-###Release 0
-
-##Optimize Your Learning
+<!-- ##Optimize Your Learning -->
 
 ##Resources
+
+* [Sieve of Eratosthenes](http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
