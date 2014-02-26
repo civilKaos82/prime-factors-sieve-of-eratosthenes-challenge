@@ -2,7 +2,7 @@
 
 ##Learning Competencies
 
-* Use Pseudocode
+* Use Pseudocode effectively to model problem-solving
 * Implement algorithms
 
 ##Summary
