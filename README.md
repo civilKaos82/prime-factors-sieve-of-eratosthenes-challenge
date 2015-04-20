@@ -4,6 +4,7 @@
 
 * Use Pseudocode effectively to model problem-solving
 * Implement algorithms
+* Writing good tests to handle edge cases in your code.
 
 ##Summary
 
