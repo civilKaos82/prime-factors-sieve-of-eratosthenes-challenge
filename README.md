@@ -1,22 +1,28 @@
-# Prime Factors Sieve Of Eratosthenes
+# Prime Factors: Sieve Of Eratosthenes
 
-##Learning Competencies
+## Summary
+In this challenge we're going to refactor a working solution to the *[prime-factors-challenge][]* that we've previously completed.  A working codebase has been provided.  We're going to refactor the code to use a specific algorithm for iterating over the possible prime factors of a number.
 
-* Use Pseudocode effectively to model problem-solving
-* Implement algorithms
-* Writing good tests to handle edge cases in your code.
+### Sieve of Eratosthenes 
+We're going to refactor the provided code to use one of the oldest algorithms know, the [Sieve of Eratosthenes][].
 
-##Summary
+In the codebase we'll be working with, to find a prime factor of a given number, we run through all the numbers between one and that given number until we find a prime factor.  We check one, then two, then three, four, five, six, etc.
 
-In this challenge, we'll be implementing a much more sophisticated version of our previous `prime_factors` function using one of the oldest algorithms know, the [Sieve of Eratosthenes](http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes).
+With this approach, we do a lot of unnecessary work. For example, we'll check is a given number is divisible by two.  And then we'll check to see if the number is divisible by four, six, eight, and all the other even numbers in the range.  But we know that if a number were divisible by four, six, or eight, it would have already been found to be divisible by two.  Said the other way, if the number was not divisible by two, it won't be divisible by any other even number.
 
-To get the prime factors of `n` your old method probably checks all the integers `p` within `1 < p <= sqrt(n)`. That's doing a bunch of extra work. For example, you'll be checking whether 3, 6, 9, 12, 15, etc. all divide your input. Once you know 3 is prime you shouldn't need to check whether 6, 9, 12, or any multiple of 3 divide your input because *by definition* no multiple of 3 will be prime.
-
-The Sieve of Eratosthenes works by iterating through the range of integers you care about and simultaneously ruling out large parts of that range. An image:
+And we do the same thing with three when we later check six, nine, twelve, etc. And the same again for five, checking then ten, fifteen, twenty, etc.
 
 ![Sieve of Eratosthenes](http://upload.wikimedia.org/wikipedia/commons/b/b9/Sieve_of_Eratosthenes_animation.gif)
 
-This is a relatively advanced challenge and is the most sophisticated algorithm you've implemented yet, most likely. Focus on understanding the algorithm–Eratosthenes certainly did it on paper, and so should you!
+*Figure 1*.  Using the Sieve of Eratosthenes to find a collection of prime numbers less than 121.
+
+The Sieve of Eratosthenes helps us by creating a collection of prime numbers that we could iterate over to avoid this unnecessary work.  Wikipedia provides an [overview][SoE overview] of how to create the collection of numbers, which has been translated into the following steps.  Figure 1 depicts this process visually.
+
+1. Create a list of consecutive integers from 2 through *n*:  2, 3, 4, ... *n*.
+2. Take the first number in the list (i.e., 2) and remove all of it's multiples (e.g., 4, 6, 8, 10, etc.).
+3. Take the next remaining number in the list (i.e., 3) and remove all of it's multiples from the list.
+4. Repeat Step 3 until all numbers in the list have been checked. 
+
 
 ##Releases
 
@@ -32,4 +38,6 @@ Refactor your `prime_factors` implementation to take advantage of the Sieve of E
 
 ##Resources
 
-* [Sieve of Eratosthenes](http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
+[prime-factors-challenge]: ../../../prime-factors-challenge
+[Sieve of Eratosthenes]: http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
+[SoE overview]: https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes#Overview
