@@ -32,9 +32,11 @@ sieve_of_eratosthenes(10)
 ```
 *Figure 2*.  Example usage of the `sieve_of_eratosthenes` method.
 
-Write a method `sieve_of_eratosthenes` which takes as its input an integer and returns all prime numbers less than that number (see Figure 2).  As always, we'll want to test that our method is working as we expect.  
+After we understand how the Sieve of Eratosthenes works, let's write a method `sieve_of_eratosthenes` which takes as its input an integer and returns all prime numbers less than that number (see Figure 2).  As always, we'll want to test that our method is working as we expect.  
 
 Remember that our tests should describe the behavior of our method: given a specific number as input, the method returns a specific value.  The tests won't reflect our implementation, but the challenge here is not just to return prime numbers less than a given number.  The challenge is to do so using the Sieve of Eratosthenes algorithm.
+
+*Note:* In trying to understand how the sieve works, use pencil and paper, a whiteboard, whatever we need to help ourselves understand.
 
 
 ### Release 1: Refactor How We Find Prime Factors
