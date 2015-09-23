@@ -1,5 +1,8 @@
 require_relative '../prime_factors'
 
+describe 'sieve_of_eratosthenes' do
+end
+
 describe 'prime_factors' do
   it 'returns an empty collection for 1' do
     expect(prime_factors 1).to be_empty

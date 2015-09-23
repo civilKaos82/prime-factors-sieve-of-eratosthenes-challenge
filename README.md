@@ -24,17 +24,24 @@ The Sieve of Eratosthenes helps us by creating a collection of prime numbers tha
 4. Repeat Step 3 until all numbers in the list have been checked. 
 
 
-##Releases
+## Releases
+### Release 0: Implement the Sieve of Eratosthenes
+```ruby
+sieve_of_eratosthenes(10)
+# => [2, 3, 5, 7]
+```
+*Figure 2*.  Example usage of the `sieve_of_eratosthenes` method.
 
-###Release 0 : Implement the Sieve of Eratosthenes
+Write a method `sieve_of_eratosthenes` which takes as its input an integer and returns all prime numbers less than that number (see Figure 2).  As always, we'll want to test that our method is working as we expect.  
 
-Write a method `erastothenes_sieve` which takes as its input an integer `n` and returns all prime numbers `p` such that `1 < p <= n`.
+Remember that our tests should describe the behavior of our method: given a specific number as input, the method returns a specific value.  The tests won't reflect our implementation, but the challenge here is not just to return prime numbers less than a given number.  The challenge is to do so using the Sieve of Eratosthenes algorithm.
 
-###Release 1 : Refactor `prime_factors`
 
-Refactor your `prime_factors` implementation to take advantage of the Sieve of Eratosthenes.
+### Release 1: Refactor How We Find Prime Factors
+We have a working codebase that will find the prime factors of a given number.  We want to refactor the code base to make use of our `sieve_of_eratosthenes` method.
 
-<!-- ##Optimize Your Learning -->
+We're free to change any of the provided code, but the behavior of the `prime_factors` method should not change.  Tests have been provided for this method.  They pass given the provided codebase, and they should continue to pass after our refactoring.
+
 
 ##Resources
 

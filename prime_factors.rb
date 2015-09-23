@@ -1,3 +1,6 @@
+def sieve_of_eratosthenes(number)
+end
+
 def prime_factors(number)
   return Array.new if number < 2
 
