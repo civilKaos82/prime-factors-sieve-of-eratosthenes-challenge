@@ -49,6 +49,6 @@ We're free to change any of the provided code, but the behavior of the `prime_fa
 In this challenge we were given a specific algorithm to implement in code.  We were also given a working codebase that we needed to understand before we could refactor.  Did we struggle with either or both of these?  Was it hard to understand the algorithm?  Was it hard to translate it into code?  Was it hard to understand how the methods in the codebase worked together?  If we struggled with any aspects of this challenge, do we understand where and why we faced these struggles?  And, how can we improve our abilities now that we've identified these areas?
 
 
-[prime-factors-challenge]: ../../../algorithm-drill-prime-factors-challenge
+[algorithm-drill-prime-factors-challenge]: ../../../algorithm-drill-prime-factors-challenge
 [Sieve of Eratosthenes]: http://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
 [SoE overview]: https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes#Overview
